@@ -1,0 +1,22 @@
+{% extends base %}
+
+{% block title %}Pydata Copenhagen Dashboard{% endblock %}
+
+{% block postamble %}
+  <style>
+    {% include 'styles.css' %}
+  </style>
+{% endblock %}
+
+{% block contents %}
+  <div class="content">
+    <img alt="Pydat logo" src="https://pydata.org/wp-content/uploads/2019/06/pydata-logo-final.png">
+    <h1>Boston Crime Dashboard</h1>
+    <p>Here's our Boston Crime Dashboard, letting you monitor crime levels in Boston</p>
+
+    <div class="graphs">
+      {{ super() }}
+    </div>
+
+  </div>
+{% endblock %}
