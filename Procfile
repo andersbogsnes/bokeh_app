@@ -1,1 +1,1 @@
-web: bokeh serve bokeh_dashboard/
+web: bokeh serve -p $PORT bokeh_dashboard/
